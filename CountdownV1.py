@@ -2,24 +2,12 @@
 #Countdown Solver without generating permutations
 #Arjun Kharel - Software Development (GMIT)
 
-wordmap = dict()
+import pickle
 result = dict()
 MIN_WORD_LENGTH = 4
+pickle_in = open("dict.pickle","rb")
+wordmap = pickle.load(pickle_in)
 
-"""def preprocessing():
-	wordsList = [line.rstrip('\n') for line in open('words.txt')]
-	for word in wordsList:
-		#generate the key #generate the value
-		key = sum(bytearray(word,'utf8')) #sum of the word, ascii value
-		addToMap(key,word)
-
-#adding ascii value as a key and list of words as values
-def addToMap(key,value):
-	if key in wordmap:
-		wordmap.get(key).append(value) #if key exists, get the reference to the list(value) and add it.
-	else:
-		wordmap.update({key:[value]})
-##solving using recursion"""
 def solver(word):
 	convertedKey = sum(bytearray(word,'utf8'))
 	if(len(word)>=MIN_WORD_LENGTH):
@@ -37,8 +25,8 @@ def solver(word):
 	
 def beginProcess():
 	#end of preprocessing
-	preprocessing()
+	#preprocessing()
 	print(len(wordmap))
-	print(solver("software"))
+	print(solver("education"))
 	
 beginProcess()
