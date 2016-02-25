@@ -6,13 +6,12 @@ wordmap = dict()
 result = dict()
 MIN_WORD_LENGTH = 4
 
-def preprocessing():
+"""def preprocessing():
 	wordsList = [line.rstrip('\n') for line in open('words.txt')]
 	for word in wordsList:
 		#generate the key #generate the value
 		key = sum(bytearray(word,'utf8')) #sum of the word, ascii value
 		addToMap(key,word)
-	print("preprocessing completed")
 
 #adding ascii value as a key and list of words as values
 def addToMap(key,value):
@@ -20,7 +19,7 @@ def addToMap(key,value):
 		wordmap.get(key).append(value) #if key exists, get the reference to the list(value) and add it.
 	else:
 		wordmap.update({key:[value]})
-
+##solving using recursion"""
 def solver(word):
 	convertedKey = sum(bytearray(word,'utf8'))
 	if(len(word)>=MIN_WORD_LENGTH):
@@ -30,12 +29,16 @@ def solver(word):
 				if sorted(word)==sorted(str) and str not in result:
 					result.update({str:len(str)})
 					
+	##lets use recursion to loop through each character
+	#we will rearrange the original word and recursively
+	##call this solver() function to find other matching words.	
+	
 	return result
 	
 def beginProcess():
 	#end of preprocessing
 	preprocessing()
 	print(len(wordmap))
-	print(solver("education"))
+	print(solver("software"))
 	
 beginProcess()
