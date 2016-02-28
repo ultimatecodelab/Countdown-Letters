@@ -10,10 +10,11 @@ def preprocessing():
 
 #adding ascii value as a key and list of words as values
 def addToMap(key,value):
-	if key in wordmap:
-		wordmap.get(key).append(value) #if key exists, get the reference to the list(value) and add it.
-	else:
-		wordmap.update({key:[value]})
+	if(len(value)>=4 and len(value)<=9):
+		if key in wordmap:
+			wordmap.get(key).append(value) #if key exists, get the reference to the list(value) and add it.
+		else:
+			wordmap.update({key:[value]})
 		
 preprocessing()	
 pickle.dump(wordmap, open('dict.pickle', 'wb'), -1)
