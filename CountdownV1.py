@@ -3,6 +3,7 @@
 #Arjun Kharel - Software Development (GMIT)
 
 import pickle
+import operator
 result = dict()
 MIN_WORD_LENGTH = 6
 pickle_in = open("dict.pickle","rb")
@@ -20,8 +21,8 @@ def solver(word):
 				if sorted(word)==sorted(str) and str not in result:
 					result.update({str:len(str)})
 		
-		if(len(word)==9 and len(result)>0):
-			return result
+		##if(len(word)==9 and len(result)>0):
+			##return result
 		tempList = list(word)
 		for i in range(len(tempList)): #eoibklhlr software
 			charTmp = tempList.pop()
@@ -33,7 +34,10 @@ def solver(word):
 def beginProcess():
 	#end of preprocessing
 	#preprocessing()
-	print(len(wordmap))
-	print(solver("edumation"))
+	countdownLetters = solver("education")
+	if(countdownLetters):
+		#sort the words from highest length to lowest (big to small)
+		sorted_x = sorted(result.items(), key=operator.itemgetter(1), reverse = True)
+	print(countdownLetters)
 	
 beginProcess()
