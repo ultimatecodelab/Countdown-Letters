@@ -55,15 +55,15 @@ def generateWord():
 	
 def beginProcess():
 	word = generateWord()
-	countdownLetters = solver(word,1)
+	countdownLetters = solver("iaapxmkhs",1)
 	if(countdownLetters):
 		#sort the words from highest length to lowest (big to small)
 		sorted_x = sorted(result.items(), key=operator.itemgetter(1), reverse = True)
-		#print(sorted_x)
+		print(sorted_x)
 	
 beginProcess()
-from countdownV1 import beginProcess
-print(timeit.timeit('beginProcess()', setup='from countdownV1 import beginProcess', number=100))
+##from countdownV1 import beginProcess
+##print(timeit.timeit('beginProcess()', setup='from countdownV1 import beginProcess', number=100))
 
 ##References
 #http://www.thecountdownpage.com/letters.htm letter frequencies
