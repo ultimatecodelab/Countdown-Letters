@@ -37,7 +37,7 @@ def solver(word,iteration):
 	
 def beginProcess():
 	word = generateWord()
-	countdownLetters = solver("iaapxmkhs",1)
+	countdownLetters = solver(word,1)
 	if(countdownLetters):
 		#sort the words from highest length to lowest (big to small)
 		sorted_x = sorted(result.items(), key=operator.itemgetter(1), reverse = True)

@@ -1,6 +1,9 @@
 import pickle
+from conundrumGenerator import generateWord
 from itertools import combinations
 import timeit
+
+
 pickle_in = open("dict.pickle","rb")
 wordmap = pickle.load(pickle_in)
 MIN_RANGE = 4
@@ -8,6 +11,7 @@ MAX_RANGE = 10
 
 def solver(letters):
 	letters = sorted(letters)
+	print(letters)
 	for i in reversed(range(MIN_RANGE,MAX_RANGE)):
 		result = set()
 		for permutations in combinations(letters,i):
@@ -18,9 +22,11 @@ def solver(letters):
 		if(result):
 			return result #we fond the longest
 	return result
-#print(solver("education"))
+
 def beginProcess():
-	print(solver("education"))
+	word = generateWord()#this function is implemented in conundrumGenerator.py. We are reusing the function.
+	print(solver(word))
+	
 beginProcess()
 	
 #from countdownV2Perm import beginProcess
