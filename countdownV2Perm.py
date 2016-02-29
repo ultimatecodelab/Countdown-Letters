@@ -29,5 +29,5 @@ def beginProcess():
 	
 beginProcess()
 	
-#from countdownV2Perm import beginProcess
-#print(timeit.timeit('beginProcess()', setup='from countdownV2Perm import beginProcess', number=10000))
+from countdownV2Perm import beginProcess
+print(timeit.timeit('beginProcess()', setup='from countdownV2Perm import beginProcess', number=10000))
