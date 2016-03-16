@@ -1,4 +1,5 @@
 from random import sample, randint
+from random import shuffle
 def generateWord():
 	"""
 	random.sample(population, k)
@@ -15,5 +16,33 @@ def generateWord():
 	vowels = sample(VOWELS, n_vowels)
 	consonants = sample(CONSONANTS, 9 - n_vowels)
 	letters = vowels+consonants
+	shuffle(letters)
 	word = ''.join(letters)
 	return word
+
+def checkForRules(word):
+	vowels = ['a','e','i','o','u']
+	vowelsCount = 0
+	consonantCount = 0 
+	
+	wrdList = list(word)
+	for i in range(0,len(wrdList)):
+		if(wrdList[i] in vowels):
+			vowelsCount+=1
+		else:
+			consonantCount+=1
+		
+	if(vowelsCount>=3 and consonantCount>=3):
+		return True
+	else:
+		return False
+		
+def userEnteredConundrum():	
+	userWord = input("\nEnter your random word of length 9,Min Vowels(3) min consonants (3): ")
+	status = checkForRules(userWord)
+	
+	while(len(userWord)!=9 or status==False):
+		userWord = input("\nEnter your random word of length 9,Min Vowels(3) min consonants (3): ")
+		status = checkForRules(userWord)
+	return userWord
+	
