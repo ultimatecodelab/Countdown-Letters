@@ -20,9 +20,33 @@
  and it is about solving the countdown letters game as efficient as we could along with the detailed analysis of the chosen  approach/algorithm
  to solve this particular problem.
 
-## Background
-The first task I completed as part of this project was to Google "countdown letters game solver".
-Google gave me two relevant results on the first page, these are [Cool Project name][2] and [Cool Solver][3].
+## Background Research 
+
+The first thing that I did after I got the project is did some research on the problem. My first task was to actually understand the countdown game. I knew about the game but wasn’t sure about all the aspect of it, example: frequency analysis of alphabets and also the winning conditions for a player. I went to YouTube and searched for “countdown letter game”. I ended up clicking [1].At the end of the video, I got full knowledge of game itself, and how it’s played. 
+
+Now at this point, I understood the game and what I am trying to solve. I am ready to do more search on other aspects of game.  The very first and important thing I wanted to find next was the randomised letters. I was not sure about the frequency of the alphabets I am supposed to use for this game.  I quickly googled and I ended up in this wikipedia page [3].
+
+**Wikipedia alphabets frequency**
+
+![Alt text](https://upload.wikimedia.org/wikipedia/commons/d/d5/English_letter_frequency_%28alphabetic%29.svg "Optional title")
+
+I now have the frequency of English alphabets. I googled again and this time I searched for the alphabets frequency of countdown letters game.  I found this source [4] to be useful for the particular problem I am trying to solve and it also has greater distribution of alphabets (67 Vowels and 76 Consonants . This source has the frequency for a countdown letter game. Therefore I decided to use this in my project for doing alphabets frequency analysis.  Adapted from [4] - *This is the standard letter distribution used on Countdown, as supplied by Art Director Demelza Sampson in January 2009, and kindly passed on to me by Charlie Reams. Please note that letters are added and removed from time to time by the producers, so this list does not necessarily reflect the letters used in any particular edition of the programme. For example, an analysis of the first few weeks of Series 63 highlights the fact that the number of G's, V's and W's are all currently increased by 1 and that there may be one fewer N.*
+
+I am not yet ready to start programming. I needed a list of English words.  Myself, Vlad, John Walsh, we combined the multiple wordlists into one gigantic wordlist. We worked collaboratively and spent some time to find the best wordlist as possible. I was searching to find the best source as possible and eventually I forwarded this link to Vlad and John [5] .  When the wordlist was combined, Vlad sent me words.txt and I decided to use this in my project and contains **267751** words. 
+
+So, what did I accomplish from this background research?
+
+•	I fully understood the problem I was going to solve
+
+•	I understood the game rules
+
+•	I knew the frequency of countdown alphabets I needed to use. 
+
+•	I have a wordlist to get started. 
+
+Now I am ready to start programming the countdown solver.
+
+
 
 ## Words list
 My words list is in the file [wordslist.txt](wordslist.txt) in this repoistory/gist.
@@ -99,3 +123,14 @@ My script runs very quickly, and certainly within the 30 seconds allowed in the 
 
 
 ## References
+
+[1]: https://www.youtube.com/watch?v=E3vmoac0R2Y
+
+[2]: https://en.wikipedia.org/wiki/Letter_frequency
+
+[3]:https://upload.wikimedia.org/wikipedia/commons/d/d5/English_letter_frequency_%28alphabetic%29.svg
+
+[4]: http://www.thecountdownpage.com/letters.htm
+
+[5]: http://www.bestwordlist.com/9letterwords.txt
+
