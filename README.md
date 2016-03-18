@@ -218,7 +218,9 @@ Effecency of countdownV2Perm.py
 
 Effecency of countdownV1Recursive.py
 This version is slower than the permutations . I have timed it using timeit function in python.
+
 **Input word**: oncaetdui 
+
 **Output(Anagrams/subject of Input)** : Total words found:  87  with recursion depth (min word length) of :  6
 
 [('education', 9), ('auctioned', 9), ('cautioned', 9), ('incudate', 8), ('outdance', 8), ('eduction', 8), ('uncoated', 8), ('actioned', 8), ('catenoid', 8), ('auction', 7), ('noticed', 7), ('deontic', 7), ('ctenoid', 7), ('aconite', 7), ('anoetic', 7), ('conduit', 7), ('uncited', 7), ('audient', 7), ('oceanid', 7), ('doucine', 7), ('tacnode', 7), ('unacted', 7), ('codeina', 7), ('tunicae', 7), ('noctuid', 7), ('counted', 7), ('caution', 7), ('codeia', 6), ('enatic', 6), ('dacoit', 6), ('octane', 6), ('intoed', 6), ('unciae', 6), ('condie', 6), ('acnode', 6), ('detain', 6), ('dautie', 6), ('atoned', 6), ('anetic', 6), ('cation', 6), ('noetic', 6), ('acetin', 6), ('tunica', 6), ('candie', 6), ('coined', 6), ('canted', 6), ('eucain', 6), ('doucet', 6), ('canoed', 6), ('econut', 6), ('deuton', 6), ('induce', 6), ('nautic', 6), ('donate', 6), ('codein', 6), ('atonic', 6), ('nidate', 6), ('dunite', 6), ('induct', 6), ('united', 6), ('notice', 6), ('auntie', 6), ('anodic', 6), ('douane', 6), ('coated', 6), ('noctua', 6), ('deacon', 6), ('ditone', 6), ('centai', 6), ('anicut', 6), ('decant', 6), ('ointed', 6), ('uncate', 6), ('action', 6), ('undate', 6), ('untied', 6), ('coteau', 6), ('coedit', 6), ('cnidae', 6), ('toucan', 6), ('cadent', 6), ('docent', 6), ('aeonic', 6), ('iodate', 6), ('autoed', 6), ('dacite', 6), ('decani', 6)]
