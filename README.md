@@ -19,6 +19,12 @@
  The idea of this project was to demonstrate the understand of different data structures and algorithms. This is a college project
  and it is about solving the countdown letters game as efficient as we could along with the detailed analysis of the chosen  approach/algorithm
  to solve this particular problem.
+ 
+ **Running the script**
+ 
+  1 : Create a dictonary - > python pickler.py
+  
+  2: python **countdownV1Recursive.py** or  python **countdownV2Perm.py** **both versions are sharing the same dictonary(dict.pickle) for fair comparasion and fair analysis of both algorithms. 
 
 ###2: Background Research 
 
