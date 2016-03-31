@@ -55,7 +55,7 @@ Now at this point I was ready to start programming the countdown solver.
 
 
 ###3:Words list
-Words were grabbed from multiple sources [5, 6]. Please check the link below. 
+Words were grabbed from multiple sources [5, 6,7]. Please check the link below in the reference section. 
 
 ###4: Files and Scripts
     •countdownV1Recursive.py
@@ -216,7 +216,7 @@ Effecency of countdownV2Perm.py
 
 **Input**: The actual random word being tested. 
 
-**Output**: The anagrams/subets of the Input. NOTE: This version is designed to get the longest possible anagrams. Please have a look at the countdownRecursive.py. This recursive version was implemented in a way, so It returns all the anagrams starting from the longest to the minimum word length that is specified in the script. Most of the countdown letters solver uses this approach too. [7] [8]
+**Output**: The anagrams/subets of the Input. NOTE: This version is designed to get the longest possible anagrams. Please have a look at the countdownRecursive.py. This recursive version was implemented in a way, so It returns all the anagrams starting from the longest to the minimum word length that is specified in the script. Most of the countdown letters solver uses this approach too. [8] [9]
 
 **Time**: How long it took to execute timeit for 1000 times. 
 
@@ -253,10 +253,10 @@ Anyway finally to answer which one is better, if you want something that scales 
 
 [6] : http://www.mieliestronk.com/corncob_lowercase.txt
 
-    http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt
+[7] : http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt
 
-[7] : http://incoherency.co.uk/countdown/
+[8] : http://incoherency.co.uk/countdown/
 
-[8] : http://www.benmason.net/countdown.qsp?txtLetters=Analtime&btnSolveLetters=Solve%2521&txtN1&txtN2&txtN3&txtN4&txtN5&txtN6&txtTarget
+[9] : http://www.benmason.net/countdown.qsp?txtLetters=Analtime&btnSolveLetters=Solve%2521&txtN1&txtN2&txtN3&txtN4&txtN5&txtN6&txtTarget
 
 **Other code snippets are referenced in the scripts**
