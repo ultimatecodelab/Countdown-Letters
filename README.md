@@ -251,7 +251,9 @@ Anyway finally to answer which one is better, if you want something that scales 
 
 [5] : http://www.bestwordlist.com/9letterwords.txt
 
-[6]: http://www.mieliestronk.com/corncob_lowercase.txt
+[6] : http://www.mieliestronk.com/corncob_lowercase.txt
+
+    http://www-01.sil.org/linguistics/wordlists/english/wordlist/wordsEn.txt
 
 [7] : http://incoherency.co.uk/countdown/
 
