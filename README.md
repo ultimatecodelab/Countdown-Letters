@@ -16,15 +16,15 @@
 ###8: References
  
 ###1: Introduction
- The idea of this project was to demonstrate the understand of different data structures and algorithms. This is a college project
+ The idea of this project was to demonstrate the understanding of different data structures and algorithms. This is a college project
  and it is about solving the countdown letters game as efficient as we could along with the detailed analysis of the chosen  approach/algorithm
  to solve this particular problem.
  
  **Running the script**
  
-  1 : Create a dictonary - > python pickler.py
+  1 : Create a dictonary - > python **pickler.py**
   
-  2: python **countdownV1Recursive.py** or  python **countdownV2Perm.py** **both versions are sharing the same dictonary(dict.pickle) for fair comparasion and fair analysis of both algorithms. 
+  2: python **countdownV1Recursive.py** or  python **countdownV2Perm.py** both versions are sharing the same dictonary(dict.pickle) for fair comparasion and fair analysis of both algorithms. 
 
 ###2: Background Research 
 
@@ -204,7 +204,7 @@ def solver(letters):
 
 ###6: Efficiency comparasion of countdownV2Perm.py and countdownV1Recursive.py
 ## Results
-Effecency of countdownV2Perm.py
+**Effecency of countdownV2Perm.py**
 
 | Timeit  |      Input      |  Output | Time |
 |----------|:-------------:|------:|---------:|
@@ -222,7 +222,7 @@ Effecency of countdownV2Perm.py
 
 **O(1) to find the word (sorted) in the dictonary , O(n) to iterate over the words of same sorted characters**. dict = key,value . If the value in the  dictonary is itself a list and if there is one element in the list, the time complexity would be near as constant. 
 
-Effecency of countdownV1Recursive.py
+**Effecency of countdownV1Recursive.py**
 This version is slower than the permutations . I have timed it using timeit function in python.
 
 **Input word**: oncaetdui 
@@ -259,4 +259,4 @@ Anyway finally to answer which one is better, if you want something that scales 
 
 [9] : http://www.benmason.net/countdown.qsp?txtLetters=Analtime&btnSolveLetters=Solve%2521&txtN1&txtN2&txtN3&txtN4&txtN5&txtN6&txtTarget
 
-**Other code snippets are referenced in the scripts**
+**Other code snippets are referenced directly in the scripts.**
