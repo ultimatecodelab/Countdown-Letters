@@ -19,7 +19,8 @@ def generateWord():
 	shuffle(letters)
 	word = ''.join(letters)
 	return word
-
+	
+#rule checking
 def checkForRules(word):
 	vowels = ['a','e','i','o','u']
 	vowelsCount = 0
@@ -37,6 +38,7 @@ def checkForRules(word):
 	else:
 		return False
 		
+#user entered word.
 def userEnteredConundrum():	
 	userWord = input("\nEnter your random word of length 9,Min Vowels(3) min consonants (3): ")
 	status = checkForRules(userWord)

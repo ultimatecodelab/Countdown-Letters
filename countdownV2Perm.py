@@ -2,7 +2,7 @@
 #Countdown Solver by generating permutations
 #Significantly faster than countdownV1Recursive
 #Please also check countdownV1Recursive.py. I have solved the countdown solver in two different algorithms and both
-#have their own ups and downs. Please check out the Github readme for more details.
+#have their pros and cons. Please check out the Github/Gist readme for more details.
 
 import pickle
 from conundrumGenerator import generateWord,userEnteredConundrum #coming from conundrumGenerator.py **(please check).
@@ -106,7 +106,8 @@ def beginProcess(option):
 		print(tempResult)
 		
 optionsMenu()
-##test for time - please uncomment the below code and comment all the print statements
+##test for time - please uncomment the below code and comment all the print statements. Also check the timing section in github/gist readme. 
+##I have done the detailed analysis of efficiency performance and scalability
 #from countdownV2Perm import beginProcess
 #print(timeit.timeit('beginProcess(1)', setup='from countdownV2Perm import beginProcess', number=1000))
 
